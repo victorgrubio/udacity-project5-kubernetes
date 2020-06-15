@@ -9,7 +9,7 @@ jobs:
     docker:
       # Use the same Docker base as the project
       - image: python:3.7.3-stretch
-      
+
     steps:
     - checkout
 
@@ -38,5 +38,5 @@ jobs:
     - run:
       name: run lint
       command: |
-      . venv/bin/activate
-      make lint 
+        . venv/bin/activate
+        make lint 
